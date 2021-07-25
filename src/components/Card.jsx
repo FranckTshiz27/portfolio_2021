@@ -13,7 +13,7 @@ const Card = ({title,description,img,imgClasseName})=>{
       <div className={`card__image ${imgClasseName}`}></div>
       <div class="card__content">
         <div class="card__title">{title}</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+        <p class="card__text">{description}</p>
         <button class="btn btn--block card__btn">
             <DiGitMerge style={{color:"#ffe73d" , fontSize:"25px", fontWeight:700, cursor:"pointer"}}/>
             <FiLink style={{color:"#ffe73d" , fontSize:"25px", fontWeight:700, cursor:"pointer"}}/>

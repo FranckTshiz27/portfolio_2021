@@ -1,74 +1,157 @@
-.apropos {
-  background-color: #f8f9fa;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 150px 0px 150px 450px;
-  margin: 0;
-  .apropos__symbol {
-    background-color: #272727;
-    display: flex;
-    justify-content: flex-start;
-    width: 6%;
-    border-radius: 10% 0% 0% 10%;
-    padding: 4px;
-  }
+// .apropos {
+//   background-color: #f8f9fa;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   box-sizing: border-box;
+//   padding: 150px 0px 150px 450px;
+//   margin: 0;
+//   .apropos__symbol {
+//     background-color: #272727;
+//     display: flex;
+//     justify-content: flex-start;
+//     width: 6%;
+//     border-radius: 10% 0% 0% 10%;
+//     padding: 4px;
+//   }
 
-  .apropos__content {
+//   .apropos__content {
+//     box-sizing: border-box;
+//     width: 60%;
+//     &:after {
+//       content: "";
+//       position: absolute;
+//       height: 150px;
+//       width: 6px;
+//       background-color: #acacac;
+//       transform: translate(-25px, -230px);
+//       z-index: 1;
+//     }
+//     .apropos__image {
+//       padding: 30px 10px;
+//       background-color: #272727;
+//       width: 130px;
+//       height: auto;
+//       display: flex;
+//       justify-content: center;
+//       border-radius: 100%;
+//       margin-bottom: 30px;
+//       img {
+//         width: 60%;
+//         height: auto;
+//         object-fit: contain;
+//       }
+//     }
+//     .apropos__title {
+//       color: #272727;
+//       font-weight: 500;
+//       font-size: 1.8em;
+//       line-height: 0.5;
+//       text-align: start;
+//       font-weight: 700;
+//       margin-bottom: 20px;
+//     }
+//     .apropos__info {
+//       color: #000;
+//       font-weight: 700;
+//       font-size: 1.2em;
+//       line-height: 25px;
+//     }
+//     button {
+//       margin-top: 40px;
+//       padding: 10px;
+//       background-color: transparent;
+//       border: 3px solid #000;
+//       border-radius: 0;
+//       font-family: "Josefin Sans", sans-serif;
+//       font-weight: 900;
+//       cursor: pointer;
+//       background-color: #272727;
+//       color: #ffe73d;
+//     }
+//   }
+// }
+
+@media (max-width: 768px) {
+  .apropos {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
-    width: 60%;
-    &:after {
-      content: "";
-      position: absolute;
-      height: 150px;
-      width: 6px;
-      background-color: #acacac;
-      transform: translate(-25px, -230px);
-      z-index: 1;
-    }
-    .apropos__image {
-      padding: 30px 10px;
+    overflow: hidden;
+    margin: 0;
+    height: 500px;
+    .apropos__symbol {
       background-color: #272727;
-      width: 130px;
-      height: auto;
       display: flex;
-      justify-content: center;
-      border-radius: 100%;
-      margin-bottom: 30px;
-      img {
-        width: 60%;
-        height: auto;
-        object-fit: contain;
+      justify-content: flex-start;
+      width: 6%;
+      border-radius: 10% 0% 0% 10%;
+      padding: 4px;
+    }
+
+    .apropos__content {
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+      padding: 20px;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 6px;
+        background-color: #acacac;
+        transform: translate(-25px, -230px);
+        z-index: 1;
       }
-    }
-    .apropos__title {
-      color: #272727;
-      font-weight: 500;
-      font-size: 1.8em;
-      line-height: 0.5;
-      text-align: start;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .apropos__info {
-      color: #000;
-      font-weight: 700;
-      font-size: 1.2em;
-      line-height: 25px;
-    }
-    button {
-      margin-top: 40px;
-      padding: 10px;
-      background-color: transparent;
-      border: 3px solid #000;
-      border-radius: 0;
-      font-family: "Josefin Sans", sans-serif;
-      font-weight: 900;
-      cursor: pointer;
-      background-color: #272727;
-      color: #ffe73d;
+      .apropos__image {
+        padding: 10px 5px;
+        background-color: #272727;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        border-radius: 100%;
+        img {
+          width: 60%;
+          height: auto;
+          object-fit: contain;
+          margin-top: -1àpx;
+        }
+      }
+      .apropos__title {
+        color: #272727;
+        font-weight: 900;
+        font-size: 1.5em;
+        line-height: 0.5;
+        text-align: start;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .apropos__info {
+        color: #000;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 15px;
+        margin-bottom: 30px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: transparent;
+        border: 3px solid #000;
+        border-radius: 0;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: #272727;
+        color: #ffe73d;
+        font-size: 0.5rem;
+        &:active {
+          outline: none;
+        }
+      }
     }
   }
 }

@@ -54,16 +54,11 @@ return(
             <li>BASE DE DONNEES</li>
             <div className="niveau">
             <div className="niveauDb">
-               
-               </div>
+            </div>
             </div>
          </div>
-
-    
-        
      </ul>
      <div className="competence__separator">
-
      </div>
     </div>
 )
