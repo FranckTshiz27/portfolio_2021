@@ -10,7 +10,7 @@ const Menu = ()=>{
 
     const getSymbol = ()=>{
 
-        return isMenuVisible?<FiAlignJustify className="menu__btn" onClick={handleClickMenu}/>:<FiX className="menu__btn" onClick={handleClickMenu}/>
+        return isMenuVisible?<FiX className="menu__btn" onClick={handleClickMenu}/>:<FiAlignJustify className="menu__btn" onClick={handleClickMenu}/>
     }
 
     const handleClickMenu= (e)=>{
@@ -19,7 +19,7 @@ const Menu = ()=>{
     
     const showMenu = ()=>{
 
-       return isMenuVisible? <div></div>: <ul className="navigation">
+       return !isMenuVisible? <div></div>: <ul className="navigation">
         <li className="navigation__item">Accueil</li>
         <li className="navigation__item">A propos</li>
         <li className="navigation__item">Compétences</li>
